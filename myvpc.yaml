@@ -1,5 +1,5 @@
 AWSTemplateFormatVersion: "2010-09-09"
-Description: This is a template for VPC
+Description: This is a template for VPC Creation with Subnets and IG and RTs
 
 Parameters:
   VpcCIDR:
