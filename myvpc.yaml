@@ -42,7 +42,7 @@ Resources:
   myPublicSubnet:
     Type: AWS::EC2::Subnet
     Properties:
-      VpcId: myVPC
+      VpcId: !Ref myVPC
       CidrBlock: 
         Ref: SubnetCIDR
       AvailabilityZone: "us-east-1a"
