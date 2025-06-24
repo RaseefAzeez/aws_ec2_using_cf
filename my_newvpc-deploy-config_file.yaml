@@ -1,0 +1,9 @@
+template-file-path: aws_ec2_using_cf/myvpc.yaml 
+
+parameters:
+  VpcCIDR: 10.0.0.0/16
+  SubnetCount: 1
+
+tags:
+  Environment: production
+  Owner: aws_ec2_using_cf
