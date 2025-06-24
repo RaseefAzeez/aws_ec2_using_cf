@@ -1,9 +1,1 @@
-template-file-path: ./myvpc.yaml 
-
-parameters:
-  VpcCIDR: 10.0.0.0/16
-  SubnetCount: 1
-
-tags:
-  Name: "gitsync"
-  Project: "Demo"
+template-file-path: ./myvpc.yaml
