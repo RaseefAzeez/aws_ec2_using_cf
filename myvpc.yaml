@@ -1,4 +1,4 @@
-AWSTemplateFormatVersion: "2010-09-09"
+AWSTemplateFormatVersion: "2010-09-09 "
 Description: This is a template for Creating a VPC with Subnets and IG and RTs via Git
 
 Parameters:
