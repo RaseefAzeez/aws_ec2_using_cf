@@ -195,6 +195,7 @@ Resources:
           - Action:
               - "s3:GetObject"
             Effect: Allow
+            Principal: "*"    
             Resource: !Sub "arn:aws:s3:::${myPortfolioContentS3bucket}/*"
 
 Outputs:
