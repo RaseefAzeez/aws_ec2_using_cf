@@ -116,7 +116,6 @@ Resources:
   myDynamoDB:
     Type: AWS::DynamoDB::Table
     Properties:
-      TableName: PortfolioContactSubmissions
       AttributeDefinitions:
         - AttributeName: submissionId
           AttributeType: S
@@ -134,7 +133,7 @@ Resources:
   MySNSTopic:
     Type: AWS::SNS::Topic
     Properties:
-      TopicName: PortfolioContactSubmissions
+      #TopicName: PortfolioContactSubmissions
       Subscription:
         - Endpoint: "raseefaz@gmail.com"
           Protocol: email
@@ -174,14 +173,14 @@ Resources:
     DeletionPolicy: Retain
     Properties:
       PublicAccessBlockConfiguration:
-        BlockPublicAcls: false
+        BlockPublicAcls: true
         BlockPublicPolicy: false
-        IgnorePublicAcls: false
+        IgnorePublicAcls: true
         RestrictPublicBuckets: false
       OwnershipControls:
         Rules:
           - ObjectOwnership: BucketOwnerPreferred
-      AccessControl: PublicRead
+      #AccessControl: PublicRead
       WebsiteConfiguration:
         IndexDocument: index.html
         #ErrorDocument: error.html
